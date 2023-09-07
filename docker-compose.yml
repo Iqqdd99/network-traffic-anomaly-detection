@@ -1,0 +1,22 @@
+version: '3.1'
+
+services:
+  jupyter:
+    container_name: anomaly-detection
+    image: anomaly-detection:latest
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8888:8888
+    environment:
+      - NB_USER="franciscoat"
+      - CHOWN_HOME=yes
+    volumes:
+      - type: bind
+        source: ./notebooks
+        target: /home/franciscoat/notebooks
+      - type: bind
+        source: ./data
+        target: /home/franciscoat/data
+    working_dir: /home/franciscoat
