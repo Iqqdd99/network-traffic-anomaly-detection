@@ -23,7 +23,9 @@ docker run -p 8888:8888 \
 Once the server is running the terminal will prompt the address of the server with the authentication token:
 
 ```
- http://127.0.0.1:8888/tree?token=<authentication_token>
+ http://127.0.0.1:<port (default 8888)>/tree?token=<authentication_token>
 ```
 
 Open the address in a browser and open the notebook anomaly_detection.ipynb. Trust the notebook to have a correct visualization of the graphics. Run the whole notebook if needed.
+
+Note: if the port 8888 is alreay in use in your machine you can change the desired port to access the jupyter server in the command or/and the Dockerfile `<desired port>:8888`
