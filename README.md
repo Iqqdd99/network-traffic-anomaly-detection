@@ -26,4 +26,4 @@ Once the server is running the terminal will prompt the address of the server wi
  http://127.0.0.1:8888/tree?token=<authentication_token>
 ```
 
-Open the address in a browser and open the notebook anomaly_detection.ipynb. Trust the notebook to have a correct visualization of the graphics. Run the whole notebook if needed
+Open the address in a browser and open the notebook anomaly_detection.ipynb. Trust the notebook to have a correct visualization of the graphics. Run the whole notebook if needed.
